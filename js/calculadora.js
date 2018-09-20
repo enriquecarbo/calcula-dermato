@@ -1,5 +1,5 @@
 $ ( function (){
-	alert("Hola Mundo")
+	alert("Hola Mundo");
 	var resultado = document.getElementById("resultado").value;
 	var peso = document.getElementById("peso").value;
 	var dias = document.getElementById("dias").value;
@@ -7,11 +7,11 @@ $ ( function (){
 
 // Eventos para los botones
 
-calcular.onclick = function(e){
+	calcular.onclick = function(e){
 		calculo();
 	}
 
-borrar.onclick = function(e){
+	borrar.onclick = function(e){
 		peso = 0;
 		dias = 0;
 		dosis = 0;
@@ -19,10 +19,11 @@ borrar.onclick = function(e){
 	}
 
 // Funcion calculo
-function calculo(){
-	var res = parseFloat(dosis) * parseFloat(dias) / parseFloat(peso); 
-	resultado.textContent = res;
+	var calculo = function(){
+		var res = parseFloat(dosis) * parseFloat(dias) / parseFloat(peso); 
+		resultado.textContent = res;
 
 	}
+
 
 })
