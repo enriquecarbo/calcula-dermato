@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dermatología - PASI Score.-</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Dermatología</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">Volver</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary text-white">
+      <div class="container text-center">
+        <h1>Calculadora para el Score de Severidad en Psoriasis. PASI</h1>
+        <p class="lead">Ingrese el eritema, escama e induración para las diferentes zonas corporales y la superficie afectada.</p>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>PASI score</h2>
+            
+              
+              <div class="form-group">
+                <label for="nombre">Nombre: </label>
+                <input class="form-control" id="nombre"  type="text" name="" placeholder="Nombre">
+
+                <label for="apellido">Apellido: </label>
+                <input class="form-control" id="apellido"  type="text" name="" placeholder="Apellido">
+              </div>
+
+    <!-- Cabeza y cuello -->
+
+              <br>
+
+              <div class="form-group">
+                <h3>Cabeza y cuello</h3>
+                <label for="eritemacc">Eritema</label>
+                <input class="form-control" id="eritemacc"  type="number" min="0" max="4" name="" placeholder="Eritema">
+
+                <label for="escamacc">Escama</label>
+                <input class="form-control" id="escamacc"  type="number" min="0" max="4" name="" placeholder="Escama">
+
+                <label for="induracc">Induración</label>
+                <input class="form-control" id="induracc"  type="number" min="0" max="4" name="" placeholder="Induración">
+
+                <label for="supcc">Superficie afectada (Número de palmas max:10)</label>
+                <input class="form-control" id="supcc"  type="number" min="0" max="10" step="0.5" name="" placeholder="Superficie afectada">
+              </div>
+
+      <!--  Miembros superiores -->
+
+              <br>
+
+              <div class="form-group">
+                <h3>Miembros superiores</h3>
+                <label for="eritemams">Eritema</label>
+                <input class="form-control" id="eritemams"  type="number" min="0" max="4" name="" placeholder="Eritema">
+
+                <label for="escamams">Escama</label>
+                <input class="form-control" id="escamams"  type="number" min="0" max="4" name="" placeholder="Escama">
+
+                <label for="indurams">Induración</label>
+                <input class="form-control" id="indurams"  type="number" min="0" max="4" name="" placeholder="Induración">
+
+                <label for="supms">Superficie afectada (Número de palmas max:20)</label>
+                <input class="form-control" id="supms"  type="number" min="0" max="20" name="" placeholder="Superficie afectada">
+              </div>
+
+      <!--  Tronco -->
+
+              <br>
+
+              <div class="form-group">
+                <h3>Tronco</h3>
+                <label for="eritemat">Eritema</label>
+                <input class="form-control" id="eritemat"  type="number" min="0" max="4" name="" placeholder="Eritema">
+
+                <label for="escamat">Escama</label>
+                <input class="form-control" id="escamat"  type="number" min="0" max="4" name="" placeholder="Escama">
+
+                <label for="indurat">Induración</label>
+                <input class="form-control" id="indurat"  type="number" min="0" max="4" name="" placeholder="Induración">
+
+                <label for="supt">Superficie afectada (Número de palmas max:30)</label>
+                <input class="form-control" id="supt"  type="number" min="0" max="30" name="" placeholder="Superficie afectada">
+              </div>
+
+      <!--  Miembros Inferiores -->
+
+              <br>
+
+              <div class="form-group">
+                <h3>Miembros Inferiores</h3>
+                <label for="eritemami">Eritema</label>
+                <input class="form-control" id="eritemami"  type="number" min="0" max="4" name="" placeholder="Eritema">
+
+                <label for="escamami">Escama</label>
+                <input class="form-control" id="escamami"  type="number" min="0" max="4" name="" placeholder="Escama">
+
+                <label for="indurami">Induración</label>
+                <input class="form-control" id="indurami"  type="number" min="0" max="4" name="" placeholder="Induración">
+
+                <label for="supmi">Superficie afectada (Número de palmas max:40)</label>
+                <input class="form-control" id="supmi"  type="number" min="0" max="40" name="" placeholder="Superficie afectada">
+              </div>
+
+    <!-- Botones -->
+
+              <div class="form-group">
+                <button class="btn btn-primary" onclick="calcular()">Calcular</button>
+                <button class="btn btn-primary" onclick="borrar()">Borrar</button>
+              </div>
+
+    <!-- Resultados -->
+
+              <div class="form-group">
+
+               <label for="resultadocc">PASI: Cabeza y cuello.</label>
+               <input class="form-control" id="resultadocc" type="number" disabled>
+
+               <label for="resultadoms">PASI: Miembros superiores</label>
+               <input class="form-control" id="resultadoms" type="number" disabled>
+
+               <label for="resultadot">PASI: Tronco</label>
+               <input class="form-control" id="resultadot" type="number" disabled>
+
+               <label for="resultadomi">PASI: Miembros inferiores</label>
+               <input class="form-control" id="resultadomi" type="number" disabled>
+
+               <label for="resultado">PASI total</label>
+               <input class="form-control" id="resultado" type="number" disabled>
+
+              </div>
+
+             
+            
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/pasi.js"></script>
+    
+
+  </body>
+
+</html>
